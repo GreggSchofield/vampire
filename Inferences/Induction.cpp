@@ -211,6 +211,7 @@ void InductionClauseIterator::process(Clause* premise, Literal* lit)
           Literal* ilit = generalize ? subsetReplacement.transformSubset(rule) : lit;
           ASS(ilit != nullptr);
           do {
+            cout << "Applying induction on " << ilit->toString() << " in " << premise->toString() << endl;
             if(one){
               performMathInductionOne(premise,lit,ilit,inductionTerm,rule);
             }
@@ -236,6 +237,7 @@ void InductionClauseIterator::process(Clause* premise, Literal* lit)
           Literal* ilit = generalize ? subsetReplacement.transformSubset(rule) : lit;
           ASS(ilit != nullptr);
           do {
+            cout << "Applying induction on " << ilit->toString() << " in " << premise->toString() << endl;
             if(one){
               performStructInductionOne(premise,lit,ilit,inductionTerm,rule);
             }

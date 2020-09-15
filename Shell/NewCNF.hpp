@@ -36,7 +36,7 @@
 #include "Kernel/Substitution.hpp"
 
 #undef LOGGING
-#define LOGGING 0
+#define LOGGING 1
 
 #if LOGGING
 #define LOG1(arg)         cout << arg << endl;
@@ -493,7 +493,11 @@ private:
     unsigned position = occ.position;
 
     unsigned size = gc->size() + List<GenLit>::length(gls) - 1;
-    SPGenClause newGc = SPGenClause(new GenClause(size, gc->bindings, gc->foolBindings));
+    cout << "First GenLit 1: " << gls->head().first->toString() << endl;
+    auto* c = new GenClause(size, gc->bindings, gc->foolBindings);
+    cout << "First GenLit 2: " << gls->head().first->toString() << endl;
+    SPGenClause newGc = SPGenClause(c);
+    cout << "First GenLit 3: " << gls->head().first->toString() << endl;
 
     ASS(_literalsCache.isEmpty());
     ASS(_formulasCache.isEmpty());
