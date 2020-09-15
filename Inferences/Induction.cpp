@@ -298,9 +298,9 @@ void InductionClauseIterator::performMathInductionOne(Clause* premise, Literal* 
 
   // This may not work. 
   // At least it doesn't properly handle definitions coming out of NewCNF
-  NOT_IMPLEMENTED;
+  //NOT_IMPLEMENTED;
 
-  return;
+  //return;
 
   //cout << "PERFORM INDUCTION on " << env.signature->functionName(c) << endl;
 
@@ -373,10 +373,10 @@ void InductionClauseIterator::performMathInductionOne(Clause* premise, Literal* 
   cnf.setForInduction();
   Stack<Clause*> hyp_clauses;
   unsigned prev_depth = premise->inference().inductionDepth();
-  Inference inf1 = TheoryAxiom(rule);
+  Inference inf1 = NonspecificInference0(UnitInputType::AXIOM,rule);
   inf1.setInductionDepth(prev_depth+1);
   FormulaUnit* fu1 = new FormulaUnit(hyp1,inf1);
-  Inference inf2 = TheoryAxiom(rule);
+  Inference inf2 = NonspecificInference0(UnitInputType::AXIOM,rule);
   inf2.setInductionDepth(prev_depth+1);
   FormulaUnit* fu2 = new FormulaUnit(hyp2,inf2);
   cnf.clausify(NNF::ennf(fu1), hyp_clauses);
