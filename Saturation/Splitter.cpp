@@ -55,6 +55,7 @@
 #include "SAT/Z3Interfacing.hpp"
 
 #include "DP/ShortConflictMetaDP.hpp"
+#include "DP/LinearArithmeticDP.hpp"
 
 #include "SaturationAlgorithm.hpp"
 
@@ -127,6 +128,11 @@ void SplittingBranchSelector::init()
     if (_ccModel) {
       _dpModel = new DP::SimpleCongruenceClosure(&_parent.getOrdering());
     }
+  }
+
+  // TODO combine this with CC
+  if(_parent.getOptions().ladp() != Options::LinearArithmeticDP::OFF) {
+    _dp = new DP::LinearArithmeticDP();
   }
 }
 
@@ -405,6 +411,8 @@ SATSolver::Status SplittingBranchSelector::processDPConflicts()
   SAT2FO& s2f = _parent.satNaming();
   static LiteralStack gndAssignment;
   static LiteralStack unsatCore;
+
+  // TODO update this so it works generally for any DP
 
   while (true) { // breaks inside
     {

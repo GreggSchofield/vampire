@@ -419,7 +419,8 @@ PARSE_OBJ = Parse/SMTLIB2.o\
             Parse/TPTP.o
 
 DP_OBJ = DP/ShortConflictMetaDP.o\
-         DP/SimpleCongruenceClosure.o
+         DP/SimpleCongruenceClosure.o\
+         DP/LinearArithmeticDP.o  
 
 LTB_OBJ = Shell/LTB/Builder.o\
           Shell/LTB/Selector.o\
