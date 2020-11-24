@@ -386,7 +386,6 @@ VS_OBJ = Shell/AnswerExtractor.o\
 #         Shell/PARSER_TKV.o\
 #         Shell/SMTLEX.o\
 #         Shell/SMTPAR.o\
-#         Shell/CParser.o\
 #         Shell/EqualityAxiomatizer.o\
 #         Shell/GlobalOptions.o\
 #         Shell/Lexer.o\

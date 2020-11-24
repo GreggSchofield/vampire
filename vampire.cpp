@@ -62,7 +62,6 @@
 #include "CASC/PortfolioMode.hpp"
 #include "CASC/CLTBMode.hpp"
 #include "CASC/CLTBModeLearning.hpp"
-#include "Shell/CParser.hpp"
 #include "Shell/CommandLine.hpp"
 #include "Shell/EqualityProxy.hpp"
 #include "Shell/Grounding.hpp"
