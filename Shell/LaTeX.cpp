@@ -26,7 +26,6 @@
 
 #include "Options.hpp"
 #include "LaTeX.hpp"
-// #include "Refutation.hpp"
 
 #include "Debug/Tracer.hpp"
 
