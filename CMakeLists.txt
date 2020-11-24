@@ -530,7 +530,6 @@ set(VAMPIRE_SHELL_SOURCES
     Shell/SimplifyFalseTrue.cpp
     Shell/SineUtils.cpp
     Shell/SMTFormula.cpp
-    #Shell/SMTPrinter.cpp
     Shell/FOOLElimination.cpp
     Shell/Statistics.cpp
     Shell/SymbolDefinitionInlining.cpp
@@ -594,7 +593,6 @@ set(VAMPIRE_SHELL_SOURCES
     Shell/SineUtils.hpp
     Shell/SMTFormula.hpp
     Shell/SMTLIBLogic.hpp
-    #Shell/SMTPrinter.hpp
     Shell/FOOLElimination.hpp
     Shell/Statistics.hpp
     Shell/SymbolDefinitionInlining.hpp
