@@ -386,7 +386,6 @@ VS_OBJ = Shell/AnswerExtractor.o\
 #         Shell/PARSER_TKV.o\
 #         Shell/SMTLEX.o\
 #         Shell/SMTPAR.o\
-#         Shell/GlobalOptions.o\
 #         Shell/Lexer.o\
 #         Shell/PDUtils.o\
 #         Shell/Refutation.o\
@@ -453,7 +452,6 @@ LIB_DEP = Indexing/TermSharing.o\
 	  Shell/Options.o\
 	  Shell/Property.o\
 	  Shell/Statistics.o\
-	  Shell/GlobalOptions.o\
 	  version.o
 	  # ClausifierDependencyFix.o\
 
