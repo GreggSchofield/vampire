@@ -330,7 +330,6 @@ void TimeCounter::outputSingleStat(TimeCounterUnit tcu, ostream& out)
   case TC_TWLSOLVER_ADD:
     out<<"TWLSolver add clauses";
     break;
-    break;
   case TC_MINIMIZING_SOLVER:
     out << "minimizing solver time";
     break;
@@ -351,12 +350,6 @@ void TimeCounter::outputSingleStat(TimeCounterUnit tcu, ostream& out)
     break;
   case TC_TRIVIAL_PREDICATE_REMOVAL:
     out<<"trivial predicate removal";
-    break;
-  case TC_SOLVING:
-    out << "Bound propagation solving";
-    break;
-  case TC_BOUND_PROPAGATION:
-    out << "Bound propagation";
     break;
   case TC_HANDLING_CONFLICTS:
     out << "handling conflicts";
