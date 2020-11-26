@@ -1,6 +1,4 @@
 /*
- * File ISSatSweeping.cpp.
- *
  * This file is part of the source code of the software program
  * Vampire. It is protected by applicable
  * copyright laws.
