@@ -105,9 +105,4 @@ private:
 extern Environment env;
 
 }
-
 #endif
-
-
-
-
